@@ -20,6 +20,28 @@ body {
   /* border: 2px solid black; */
 }
 
+.search {
+  grid-column: 2 / 3;
+  grid-row: 1 / 1;
+}
+
+.account {
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+}
+
+.header {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.main {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+
+/* nav section */
+
 .nav {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
@@ -105,25 +127,7 @@ body {
   content: url("img/privacy.png");
 }
 
-.search {
-  grid-column: 2 / 3;
-  grid-row: 1 / 1;
-}
-
-.profile {
-  grid-column: 3 / 4;
-  grid-row: 1 / 1;
-}
-
-.header {
-  grid-column: 2 / 4;
-  grid-row: 2 / 3;
-}
-
-.main {
-  grid-column: 2 / 3;
-  grid-row: 3 / 5;
-}
+/* search seciton */
 
 .search {
   display: flex;
@@ -137,11 +141,38 @@ body {
 }
 
 .search-bar {
-  width: 60%;
+  width: 90%;
   height: 25%;
   padding: 12px 20px;
   border-radius: 12px;
   background-color: #e2e8f0;
   font-family: "Roboto", sans-serif;
   border: none;
+}
+
+/* account section */
+
+.account {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px 0 20px;
+  font-weight: bold;
+}
+
+.notification,
+.profile {
+  border: none;
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+}
+
+.notification {
+  padding: 8px;
+}
+
+.notification img,
+.profile img {
+  width: 100%;
 }
