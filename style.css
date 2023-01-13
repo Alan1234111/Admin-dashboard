@@ -13,11 +13,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1fr 1fr 6fr 6fr;
-}
-
-.container * {
-  /* border: 2px solid black; */
+  grid-template-rows: 0.5fr 1fr 6fr 6fr;
 }
 
 .search {
@@ -327,4 +323,43 @@ body {
 .announcement:nth-child(2) p {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 30px;
+}
+
+/* trending section */
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e8f0;
+}
+
+.trending-header {
+  margin: 10px 0 20px 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.trending-profiles {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.trending-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.trending-profile-information {
+  margin-left: 1rem;
+}
+
+.trending-profile-information h3 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
