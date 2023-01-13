@@ -82,6 +82,7 @@ body {
   align-items: center;
   color: white;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .nav__main li a::before {
@@ -129,6 +130,11 @@ body {
   background-image: url("img/privacy.png");
 }
 
+.nav__main li a:hover {
+  opacity: 0.6;
+  scale: 1.1;
+}
+
 /* search seciton */
 
 .search {
@@ -150,6 +156,12 @@ body {
   background-color: #e2e8f0;
   font-family: "Roboto", sans-serif;
   border: none;
+  transition: 0.2s;
+}
+
+.search-bar:hover {
+  opacity: 0.8;
+  scale: 1.02;
 }
 
 /* account section */
@@ -161,6 +173,8 @@ body {
   padding: 0 40px 0 20px;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .notification,
@@ -169,6 +183,7 @@ body {
   background-color: transparent;
   width: 3rem;
   height: 3rem;
+  transition: 0.2s;
 }
 
 .notification {
@@ -178,6 +193,19 @@ body {
 .notification img,
 .profile img {
   width: 100%;
+}
+
+.notification,
+.profile,
+.name {
+  transition: 0.2s;
+}
+
+.notification:hover,
+.profile:hover,
+.name:hover {
+  opacity: 0.7;
+  scale: 1.1;
 }
 
 /* main section */
@@ -215,6 +243,7 @@ body {
   background-color: white;
   font-size: 1.2rem;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: 0.2s;
 }
 
 .article-text {
@@ -231,12 +260,22 @@ body {
 .article button {
   border: none;
   background-color: transparent;
+  transition: 0.2s;
 }
 
 .article button img {
   width: 1.4rem;
   height: 1.4rem;
   margin-left: 1rem;
+}
+
+.article button:hover {
+  opacity: 0.7;
+  scale: 1.2;
+}
+
+.article:hover {
+  scale: 1.05;
 }
 
 /* header seection */
@@ -279,6 +318,12 @@ body {
   font-weight: bold;
   background-color: #1992d4;
   color: white;
+  transition: 0.2s;
+}
+
+.project-actions button:hover {
+  opacity: 0.7;
+  scale: 1.1;
 }
 
 /* announcement section */
@@ -317,12 +362,18 @@ body {
   width: 80%;
   height: 33.33%;
   margin-top: 0.5rem;
+  transition: 0.2s;
 }
 
 .announcement:nth-child(1) p,
 .announcement:nth-child(2) p {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 30px;
+}
+
+.announcement:hover {
+  scale: 1.1;
+  opacity: 0.8;
 }
 
 /* trending section */
@@ -353,6 +404,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 1rem;
+  transition: 0.2s;
 }
 
 .trending-profile-information {
@@ -362,4 +414,9 @@ body {
 .trending-profile-information h3 {
   font-weight: bold;
   margin-bottom: 0.5rem;
+}
+
+.trending-profile:hover {
+  scale: 1.1;
+  opacity: 0.8;
 }
